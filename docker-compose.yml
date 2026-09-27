@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  royal-karate-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: royal_karate_all_in_one
+    ports:
+      - "8080:8080"
+    environment:
+      - MYSQL_DATABASE=karate_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    restart: unless-stopped
