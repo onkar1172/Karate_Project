@@ -1,2 +1,10 @@
-/node_modules
-hello
+# Dependencies & Builds
+**/node_modules/
+**/target/
+**/dist/
+
+# IDE & OS Files
+.idea/
+.vscode/
+.DS_Store
+*.log
